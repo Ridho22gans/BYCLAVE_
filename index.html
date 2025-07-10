@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>byclave_ | Buket Bunga Satin</title>
+  <meta name="description" content="Jual Buket Bunga Satin cantik untuk wisuda, ulang tahun, dan momen spesial. Order via WhatsApp byclave_ sekarang!">
+  <meta name="keywords" content="buket bunga, buket satin, wisuda, ulang tahun, bunga handmade Jogja">
+  <link rel="icon" href="images/logo.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo byclave_" title="Logo byclave_">
+    <h1>byclave_</h1>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">byclave_</a>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#harga">Harga</a></li>
+        <li><a href="#pesan">Pemesanan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="galeri" class="fade-in">
+    <h2>Galeri Buket Bunga</h2>
+    <div class="gallery">
+      <img src="images/Buket Satin 1.jpg" alt="Buket Satin 1" onclick="previewImage(this.src)">
+      <img src="images/Buket Satin A.jpg" alt="Buket Satin A" onclick="previewImage(this.src)">
+      <img src="images/contoh2.jpg" alt="contoh2" onclick="previewImage(this.src)">
+      <img src="images/contoh1.jpg" alt="contoh1" onclick="previewImage(this.src)">
+    </div>
+    <div class="preview">
+      <img id="mainPreview" src="images/Buket Satin 1.jpg" alt="Preview Buket">
+    </div>
+  </section>
+
+  <section id="harga" class="fade-in">
+    <h2>Daftar Harga</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Buket</th>
+          <th>7 Tangkai</th>
+          <th>11 Tangkai</th>
+          <th>18 Tangkai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="produk-nama"><img src="images/Buket Satin 1.jpg" alt=""> Buket Satin 1</td>
+          <td>Rp30.000</td>
+          <td>Rp45.000</td>
+          <td>Rp65.000</td>
+        </tr>
+        <tr>
+          <td class="produk-nama"><img src="images/Buket Satin A.jpg" alt=""> Buket Satin A</td>
+          <td>Rp35.000</td>
+          <td>Rp55.000</td>
+          <td>Rp75.000</td>
+        </tr>
+        <tr>
+          <td class="produk-nama"><img src="images/Buket Satin Dahlia.jpg" alt=""> Buket Dahlia</td>
+          <td>Rp30.000</td>
+          <td>Rp45.000</td>
+          <td>Rp65.000</td>
+        </tr>
+        <tr>
+          <td class="produk-nama"><img src="images/contoh1.jpg" alt=""> contoh1</td>
+          <td>Rp25.000</td>
+          <td>Rp40.000</td>
+          <td>Rp60.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="pesan" class="fade-in">
+    <h2>Formulir Pemesanan</h2>
+    <form id="orderForm">
+      <label for="name">Nama Anda</label>
+      <input type="text" id="name" required pattern="[A-Za-z\s]+" title="Hanya huruf dan spasi.">
+
+      <label for="phone">Nomor WhatsApp</label>
+      <input type="tel" id="phone" required pattern="08[0-9]{8,}" placeholder="Contoh: 081234567890">
+
+      <label for="address">Alamat Pengiriman</label>
+      <textarea id="address" rows="3" required></textarea>
+
+      <label for="product">Pilih Buket</label>
+      <select id="product" required>
+        <option value="">-- Pilih Buket --</option>
+        <option value="Buket Satin 1">Buket Satin 1</option>
+        <option value="Buket Satin A">Buket Satin A</option>
+        <option value="Buket Dahlia">Buket Dahlia</option>
+        <option value="contoh1">contoh1</option>
+      </select>
+
+      <label for="jumlah">Jumlah Tangkai</label>
+      <select id="jumlah" required>
+        <option value="">-- Pilih Jumlah --</option>
+        <option value="7 Tangkai">7 Tangkai</option>
+        <option value="11 Tangkai">11 Tangkai</option>
+        <option value="18 Tangkai">18 Tangkai</option>
+      </select>
+
+      <label for="metode">Metode Pengiriman</label>
+      <select id="metode" required>
+        <option value="">-- Pilih Metode --</option>
+        <option value="COD (Bayar di Tempat)">COD (Bayar di Tempat)</option>
+        <option value="Transfer Sebelum Kirim">Transfer Sebelum Kirim</option>
+        <option value="Ambil Sendiri">Ambil Sendiri</option>
+      </select>
+
+      <label for="tanggal">Tanggal Kirim (Opsional)</label>
+      <input type="date" id="tanggal">
+
+      <label for="note">Catatan Tambahan</label>
+      <textarea id="note" rows="3" placeholder="Contoh: Tambahkan kartu ucapan, warna pita, dll."></textarea>
+
+      <button type="submit">Kirim via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer id="kontak">
+    <p>© 2025 byclave_</p>
+    <div class="social">
+      <a href="https://instagram.com/byclave_" target="_blank">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@byclave_" target="_blank">🎵 TikTok</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
